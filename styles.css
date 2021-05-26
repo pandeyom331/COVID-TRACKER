@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #f3f2f2;
+}
+
+/* -------- NAVBAR -------- */
+
+.logo img {
+  width: 50px;
+}
+
+.navbar {
+  background-color: #393e46;
+  height: 11vh;
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.nav-item {
+  padding: 0 18px;
+  font-size: 1rem;
+  font-family: "Montserrat-Light";
+  font-weight: bold;
+}
+
+
+/* Top-part */
+.Top-part {
+  background-image: url("resources/img/bg.jpg");
+  height: 110vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-color: Black;
+}
+
+.distortion0 {
+  position: absolute;
+  display: flex;
+  padding-bottom: 20%;
+  padding-right: 6%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: radial-gradient(ellipse 50% 35% at 50% 50%, transparent);
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  font-size: 3em;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.1rem #f6f6f6, 0 0 0 #98ded9,
+    -0 0 0 #98ded9, 0 0 0.5rem #98ded9,
+    0 -0 1rem #0a043c, 0 0.25rem 0 #0a043c;
+}
+
+.distortion1 {
+  background-color: #000000;
+  position: absolute;
+  margin-top: 10%;
+  padding-bottom: 20%;
+  display: flex;
+  height: 120vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: radial-gradient(ellipse 50% 35% at 50% 50%, transparent);
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 8em;
+  color: #f6f6f6;
+  text-shadow: 0 0 0.1rem #f6f6f6, 0 0 0 #98ded9,
+    -0 0 0 #98ded9, 0 0 0.5rem #98ded9,
+    0 -0 1rem #0a043c, 0 0.25rem 0 #0a043c;
+  animation: shine 5s forwards, flicker 15s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #f6f6f6;
+    text-shadow: 0 0 0.6rem #f6f6f6, 0 0 1.5rem #98ded9,
+      -0.2rem 0.1rem 1rem #98ded9, 0.2rem 0.1rem 1rem #98ded9,
+      0 -0.5rem 2rem #0a043c, 0 0.5rem 3rem #0a043c;
+  }
+
+  28%,
+  33% {
+    color: #98ded9;
+    text-shadow: none;
+  }
+
+  82%,
+  97% {
+    color: #c7ffd8;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 4s forwards, blink 7s 4s infinite;
+}
+
+.fast-flicker {
+  animation: shine 4s forwards, blink 7s 4s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #51c2d5;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #f6f6f6;
+    text-shadow: 0 0 0.6rem #f6f6f6, 0 0 1.5rem #98ded9,
+      -0.2rem 0.1rem 1rem #98ded9, 0.2rem 0.1rem 1rem #98ded9,
+      0 -0.5rem 2rem #161d6f, 0 0.5rem 3rem #161d6f;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.distortion2 {
+  position: absolute;
+  display: flex;
+  padding-top: 24%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: radial-gradient(ellipse 50% 35% at 50% 50%, transparent);
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  font-size: 1.5rem;
+  color: #f6f6f6;
+}
+
+/* features*/
+#features {
+  padding: 9%;
+  background-color: #d3e0ea;
+  position: relative;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 4%;
+}
+
+.icon {
+  color: Black;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: red;
+}
+
+p {
+  text-height: 1em;
+}
+
+/* services section */
+#services {
+  padding: 100px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.services-colomn {
+  padding: 3% 2%;
+}
+
+.card-header
+{
+  text-align: center;
+}
+
+.head {
+  color: #fff;
+}
+
+.image {
+  height: 40vh;
+  width: auto;
+}
+
+
+/* Testimonials */
+#testimonials {
+  background-color: #a6a9b6;
+  color: #fff;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.text
+{
+  font-size: 2rem;
+}
+
+.text1
+{
+  font-size: 3rem;
+}
+
+.text2
+{
+color: black;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.carousel
+{
+    text-align: left;
+}
+
+/* CTA-section */
+#cta {
+  padding: 5% 13%;
+  text-align: center;
+  background-color: #393232;
+  color: white;
+}
+
+.faa {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+
+/* Footer */
+#footer {
+  padding: 3% 11%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.git {
+  color: grey;
+  margin: 20px 10px;
+}
+
+.git:hover {
+  color: blue;
+}
+
+@media (max-width: 1200px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .distortion1 {
+    font-size: 4rem;
+    height: 105vh;
+  }
+
+  .distortion0 {
+    font-size: 2.5rem;
+  }
+
+  .distortion2 {
+    font-size: 1.7rem;
+    margin-top: 100px;
+  }
+
+  .image{
+    height: 20vh;
+    width: 17vh;
+  }
+
+  .distortion1 {
+    height: 140vh;
+  }
+}

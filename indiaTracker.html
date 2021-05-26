@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>COVID-19 India Tracker</title>
+  <meta name="description" content="A Simple COVID-19 Tracker for India">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/9bb8901042.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark logo">
+      <img src="./resources/img/logo1.png" alt="">
+      <a class="navbar-brand" href="">
+        COVID</br>Tracker
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+
+    <header class="header">
+      <h1 class="header-heading display-4">COVID-19 INDIA TRACKER</h1>
+    </header>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <!-- CONFIRMED CASES CARD -->
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-heading card-header text-center">CONFIRMED</div>
+          <div class="card-body">
+            <p class="confirmed card-text text-center">&nbsp;</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVE CASES -->
+
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-heading card-header text-center">ACTIVE</div>
+          <div class="card-body">
+            <p class="active card-text text-center">&nbsp;</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- RECOVERED CASES CARD -->
+
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+          <div class="card-heading card-header text-center">RECOVERED </div>
+          <div class="card-body">
+            <p class="recovered card-text text-center">&nbsp;</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- DEATHS CARD -->
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+          <div class="card-heading card-header text-center">DEATHS</div>
+          <div class="card-body">
+            <p class="deaths card-text text-center">&nbsp;</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="chart-container container-fluid">
+    <h2 class="text-center"> DATA VISUALIZED </h2>
+    <canvas id="confirmedChart" width="400" height="400"></canvas>
+
+  </div>
+
+
+  <div class="table-container container-fluid">
+    <h2 class="text-center"> REGION-WISE TALLY </h2>
+
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Region</th>
+          <th scope="col">Confirmed Cases</th>
+          <th scope="col">Active Cases</th>
+          <th scope="col">Recovered</th>
+          <th scope="col">Deaths</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="container-fluid">
+    <footer id="footer">
+      <a href="https://github.com/pandeyom331"><i class="git fab fa-github fa-1x "></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100004398076666"><i class="git fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/solo_thinker_134/"><i class="git fab fa-instagram "></i></a>
+      <a class="email" href="mailto:pandeyom305@gmail.com"><i class="git fas fa-envelope"></i></a>
+      <p>Copyright &#169; <span id="year"></span> COVID-TRACKER</p>
+
+    </footer>
+
+    <script>
+      var year = new Date();
+      var newYear = year.getFullYear();
+      document.getElementById("year").innerHTML = newYear;
+    </script>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="appindia.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.In_nav{
+  padding-left: 32%;
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+/* ----  NavBar ---- */
+
+.navbar{
+  background-color: #393e46;
+  height: 11vh;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+
+/*-- Main content -- */
+
+.main{
+  height: 130vh;
+  width: 100%;
+  background-image: url("../resources/img/COVID-19.jpg");
+  background-size:cover;
+  background-position: center;
+}
+
+.row{
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+   z-index: 1;
+   height: 130vh;
+   width: 101%;
+}
+
+.General-text
+{
+  font-family: 'Montaga', serif;
+  padding-top: 40px;
+  margin-left: 20px;
+  color: white;
+  word-spacing:5px;
+}
+
+.services-colomn {
+  padding: 2%;
+}
+
+.card-header
+{
+  text-align: center;
+}
+
+.head {
+  color: #fff;
+}
+
+.image {
+  height: 40vh;
+  width: 57vh;
+  align-content:center;
+}
+
+#footer{
+  padding: 1% 2%;
+  text-align: center;
+  background-color:#fff;
+
+}
+
+.git
+{
+  color:black;
+ margin : 10px 10px;
+}
+.git:hover{
+  color: brown;
+}
+
+@media (max-width: 1200px) {
+
+  .image{
+    height: 20vh;
+    width: 17vh;
+    align-content:center;
+  }
+
+  .services-colomn {
+    padding: 0;
+  }
+}
